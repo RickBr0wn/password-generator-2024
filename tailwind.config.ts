@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { fontFamily } from 'tailwindcss/defaultTheme'
+import { fontFamily, screens } from 'tailwindcss/defaultTheme'
 
 const config = {
   darkMode: ['class'],
@@ -11,11 +11,20 @@ const config = {
   ],
   prefix: '',
   theme: {
+    screens: {
+      xs: '475px',
+      ...screens,
+    },
     container: {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        xs: '200px',
+        sm: '400px',
+        md: '800px',
+        lg: '1200px',
+        xl: '1400px',
+        '2xl': '1600px',
       },
     },
     extend: {
