@@ -4,6 +4,7 @@ import './globals.css'
 import { cn } from '~/lib/utils'
 import { ThemeProvider } from '~/components/theme-provider'
 import NavBar from '~/components/nav/nav-bar'
+import ScreenSizeIndicator from '~/components/screen-size-indicator'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <>
+            <ScreenSizeIndicator />
             <NavBar />
             {children}
           </>
