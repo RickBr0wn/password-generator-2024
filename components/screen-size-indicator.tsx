@@ -1,8 +1,20 @@
+// for this to work correctly, add these lines to: `tailwind.config.ts`
+// import { screens } from 'tailwindcss/defaultTheme'
+//
+// const config = {
+//  ...
+//  theme :{
+//    screens: {
+//    xs: '475px',
+//     ...screens,
+//  },
+// ...
+
 export default function ScreenSizeIndicator() {
   return (
     <div className="fixed z-50 top-0 left-0 p-4 text-xl font-bold">
       <h1 className="xs:block sm:hidden">
-        XS <span className="font-light opacity-50 text-xs">0px - 639px</span>
+        XS <span className="font-light opacity-50 text-xs">475px - 639px</span>
       </h1>
       <h1 className="hidden sm:block md:hidden">
         SM <span className="font-light opacity-50 text-xs">640px - 767px</span>
@@ -25,11 +37,6 @@ export default function ScreenSizeIndicator() {
     </div>
   )
 }
-
-// lg	@media screen and (min-width: 1024px)	≥1024px
-// xl	@media screen and (min-width: 1280px)	≥1280px
-// 2xl	@media screen and (min-width: 1536px)	≥1536px
-// PureCSS has seven default breakpoints:
 
 // Path: components/screen-size-indicator.tsx
 // Created at: 16:19:55 - 11/03/2024
