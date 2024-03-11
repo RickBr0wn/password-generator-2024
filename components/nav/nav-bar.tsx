@@ -1,5 +1,11 @@
+import { DarkModeToggle } from '../dark-mode-toggle'
+
 export default function NavBar() {
-  return <h1>NavBar</h1>
+  return (
+    <nav className="flex justify-end p-2">
+      <DarkModeToggle />
+    </nav>
+  )
 }
 
 // Path: components/nav/nav-bar.tsx
