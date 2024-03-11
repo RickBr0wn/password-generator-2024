@@ -1,5 +1,13 @@
+import NavBar from '~/components/nav/nav-bar'
+
 export default function Home() {
-  return <main>app</main>
+  return (
+    <main>
+      <div>
+        <NavBar />
+      </div>
+    </main>
+  )
 }
 
 // Path: app/page.tsx
