@@ -17,6 +17,7 @@ import generatePassword from '~/lib/generate-password'
 
 import { useState } from 'react'
 import { Slider } from '../ui/slider'
+import { useToast } from '../ui/use-toast'
 
 const PasswordOptionsSchema = z.object({
   length: z.number().array(),
@@ -33,10 +34,12 @@ export default function PasswordGenerator() {
     'strength',
   ])
 
+  const { toast } = useToast()
+
   const form = useForm<PasswordOptions>({
     resolver: zodResolver(PasswordOptionsSchema),
     defaultValues: {
-      length: [16],
+      length: [32],
       specials: true,
       capitals: true,
       numbers: true,
@@ -56,6 +59,11 @@ export default function PasswordGenerator() {
     )
 
     await navigator.clipboard.writeText('Copy this text to clipboard')
+
+    toast({
+      title: 'Copied to clipboard',
+      description: 'Your new password has been copied to the clipboard.',
+    })
   }
 
   return (
@@ -100,7 +108,6 @@ export default function PasswordGenerator() {
                 <FormItem>
                   <FormControl>
                     <Slider
-                      className="mb-6"
                       max={32}
                       min={8}
                       step={1}

@@ -4,7 +4,7 @@ import { Card } from '~/components/ui/card'
 export default function Home() {
   return (
     <main>
-      <Card className="p-6 flex justify-center">
+      <Card className="py-12 px-6 flex justify-center">
         <PasswordGenerator />
       </Card>
     </main>

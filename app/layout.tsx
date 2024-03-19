@@ -5,6 +5,8 @@ import { cn } from '~/lib/utils'
 import { ThemeProvider } from '~/components/theme-provider'
 import NavBar from '~/components/nav/nav-bar'
 import ScreenSizeIndicator from '~/components/screen-size-indicator'
+import { Toaster } from '~/components/ui/toaster'
+import { TooltipProvider } from '~/components/ui/tooltip'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -35,11 +37,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <>
-            <ScreenSizeIndicator />
+          <TooltipProvider>
+            {/* <ScreenSizeIndicator /> */}
             <NavBar />
             <div className="container mt-10">{children}</div>
-          </>
+            <Toaster />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
