@@ -69,7 +69,7 @@ export default function PasswordGenerator() {
     <div className="text-center">
       <div>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Password Generator
+          SecureGen 🔐
         </h1>
         <p className="text-slate-500 mt-2">
           Defend against cyber threats with passwords built for strength

@@ -4,7 +4,7 @@ import './globals.css'
 import { cn } from '~/lib/utils'
 import { ThemeProvider } from '~/components/theme-provider'
 import NavBar from '~/components/nav/nav-bar'
-import ScreenSizeIndicator from '~/components/screen-size-indicator'
+// import ScreenSizeIndicator from '~/components/screen-size-indicator'
 import { Toaster } from '~/components/ui/toaster'
 import { TooltipProvider } from '~/components/ui/tooltip'
 
