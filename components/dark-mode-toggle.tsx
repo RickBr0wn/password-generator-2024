@@ -26,14 +26,14 @@ export function DarkModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme('light')}>
-          Light
+          Light Mode
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme('dark')}>
-          Dark
+          Dark Mode
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('system')}>
+        {/* <DropdownMenuItem onClick={() => setTheme('system')}>
           System
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
       </DropdownMenuContent>
     </DropdownMenu>
   )

@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SecureGen 🔐
+
+### Password Generator
+
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+
+SecureGen is a powerful password generator built with Next.js, ZOD, and React Hook Form, allowing users to create strong, secure passwords tailored to their needs. With customizable settings and intuitive design, SecureGen simplifies the process of generating and managing passwords for online security.
 
 ## Getting Started
 
-First, run the development server:
+To use SecureGen, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/RickBr0wn/secureGen.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The development server will be running at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Customize password complexity with toggle switches for capital letters, numbers, and special characters.
+- Adjust password length using a convenient slide bar.
+- Automatically copy generated passwords to clipboard for easy use.
+- Display security strength of generated password (low, medium, secure).
+- Intuitive and user-friendly interface.
 
-## Learn More
+## Testing
 
-To learn more about Next.js, take a look at the following resources:
+SecureGen includes testing support with Jest. To run tests, use the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm test
+# or
+yarn test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Please refer to the [CONTRIBUTING.md](https://gist.github.com/RickBr0wn/0b4a139f833e0d0bafddb0d043644b20) for guidelines on contributing to SecureGen.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Your Name** - _Initial work_ - [RickBr0wn](https://github.com/RickBr0wn)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/RickBr0wn/5f95ee6118bb32034e2b94acbd88a99d) file for details.
