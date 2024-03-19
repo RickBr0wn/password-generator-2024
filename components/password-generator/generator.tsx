@@ -43,7 +43,7 @@ export default function PasswordGenerator() {
     },
   })
 
-  const onSubmit: SubmitHandler<PasswordOptions> = (
+  const onSubmit: SubmitHandler<PasswordOptions> = async (
     data: z.infer<typeof PasswordOptionsSchema>
   ) => {
     setPassword(
@@ -54,6 +54,8 @@ export default function PasswordGenerator() {
         data.numbers
       )
     )
+
+    await navigator.clipboard.writeText('Copy this text to clipboard')
   }
 
   return (
