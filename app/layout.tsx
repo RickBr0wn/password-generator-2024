@@ -38,7 +38,7 @@ export default function RootLayout({
           <>
             <ScreenSizeIndicator />
             <NavBar />
-            {children}
+            <div className="container mt-10">{children}</div>
           </>
         </ThemeProvider>
       </body>

@@ -1,7 +1,12 @@
+import PasswordGenerator from '~/components/password-generator/generator'
+import { Card } from '~/components/ui/card'
+
 export default function Home() {
   return (
     <main>
-      <div>app</div>
+      <Card className="p-6 flex justify-center">
+        <PasswordGenerator />
+      </Card>
     </main>
   )
 }

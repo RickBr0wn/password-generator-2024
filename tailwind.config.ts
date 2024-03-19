@@ -19,12 +19,7 @@ const config = {
       center: true,
       padding: '2rem',
       screens: {
-        xs: '200px',
-        sm: '400px',
-        md: '800px',
-        lg: '1200px',
-        xl: '1400px',
-        '2xl': '1600px',
+        sm: '620px',
       },
     },
     extend: {
