@@ -17,7 +17,6 @@ import generatePassword from '~/lib/generate-password'
 
 import { useState } from 'react'
 import { Slider } from '../ui/slider'
-import useCopyToClipboard from '~/lib/use-copy-to-clipboard'
 
 const PasswordOptionsSchema = z.object({
   length: z.number().array(),
