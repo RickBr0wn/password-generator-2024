@@ -29,10 +29,9 @@ const PasswordOptionsSchema = z.object({
 type PasswordOptions = z.infer<typeof PasswordOptionsSchema>
 
 export default function PasswordGenerator() {
-  const [password, setPassword] = useState<Array<string>>([
-    'password',
-    'strength',
-  ])
+  const [password, setPassword] = useState<Array<string>>(
+    generatePassword(32, true, true, true)
+  )
 
   const { toast } = useToast()
 
